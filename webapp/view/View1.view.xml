@@ -9,12 +9,13 @@
         title="{i18n>title}"
     >
         <content>
-            <SearchField id="filter"
+            <SearchField
+                id="filter"
                 placeholder="Product Name"
                 liveChange="onGetProduct"
                 showRefreshButton="true"
             />
-            
+
             <Table
                 id="priceTable"
                 items="{/Products}"
@@ -23,36 +24,66 @@
                 <headerToolbar>
                     <OverflowToolbar id="ovToolbar">
                         <Title
-                        id="appTitle"
+                            id="appTitle"
                             level="H3"
                             text="Filter"
                         />
                         <ToolbarSpacer id="spacer1" />
-                        <Button id="btnAdd" icon="sap-icon://add" />
-                        <Button id="btnDel" icon="sap-icon://delete" />
+                        <Button
+                            id="btnAdd"
+                            icon="sap-icon://add"
+                        />
+                        <Button
+                            id="btnDel"
+                            icon="sap-icon://delete"
+                        />
                     </OverflowToolbar>
                 </headerToolbar>
                 <columns>
                     <Column id="clmProdID">
-                        <Text id="txtProdID" text="Product ID" />
+                        <Text
+                            id="txtProdID"
+                            text="Product ID"
+                        />
                     </Column>
                     <Column id="clmProdName">
-                        <Text id="txtProdName" text="Product Name" />
+                        <Text
+                            id="txtProdName"
+                            text="Product Name"
+                        />
                     </Column>
                     <Column id="clmUnitP">
-                        <Text id="txtUnitP" text="Unit Price" />
+                        <Text
+                            id="txtUnitP"
+                            text="Unit Price"
+                        />
                     </Column>
                     <Column id="clmUnitS">
-                        <Text id="txtUnitS" text="Units in Stock" />
+                        <Text
+                            id="txtUnitS"
+                            text="Units in Stock"
+                        />
                     </Column>
                 </columns>
                 <items>
                     <ColumnListItem id="cliMain">
                         <cells>
-                            <Text id="valProdID" text="{ProductID}" />
-                            <Text id="valProdName" text="{ProductName}" />
-                            <Text id="valUnitP" text="{UnitPrice}" />
-                            <Text id="valUnitS" text="{UnitsInStock}" />
+                            <Text
+                                id="valProdID"
+                                text="{ProductID}"
+                            />
+                            <Text
+                                id="valProdName"
+                                text="{ProductName}"
+                            />
+                            <Text
+                                id="valUnitP"
+                                text="{UnitPrice}"
+                            />
+                            <Text
+                                id="valUnitS"
+                                text="{UnitsInStock}"
+                            />
                         </cells>
                     </ColumnListItem>
                 </items>
