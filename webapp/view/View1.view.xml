@@ -9,13 +9,6 @@
         title="{i18n>title}"
     >
         <content>
-            <SearchField
-                id="filter"
-                placeholder="Product Name"
-                liveChange="onGetProduct"
-                showRefreshButton="true"
-            />
-
             <Table
                 id="priceTable"
                 items="{/Products}"
@@ -23,19 +16,23 @@
             >
                 <headerToolbar>
                     <OverflowToolbar id="ovToolbar">
-                        <Title
-                            id="appTitle"
-                            level="H3"
-                            text="Filter"
+                        <SearchField
+                            id="filter"
+                            placeholder="{i18n>productName}"
+                            liveChange="onGetProduct"
+                            showRefreshButton="true"
+                            width="93%"
                         />
-                        <ToolbarSpacer id="spacer1" />
+                        <!-- <ToolbarSpacer id="spacer1" width="6%" /> -->
                         <Button
                             id="btnAdd"
                             icon="sap-icon://add"
+                            width="2%"
                         />
                         <Button
                             id="btnDel"
                             icon="sap-icon://delete"
+                            width="2%"
                         />
                     </OverflowToolbar>
                 </headerToolbar>
@@ -43,25 +40,25 @@
                     <Column id="clmProdID">
                         <Text
                             id="txtProdID"
-                            text="Product ID"
+                            text="{i18n>productID}"
                         />
                     </Column>
                     <Column id="clmProdName">
                         <Text
                             id="txtProdName"
-                            text="Product Name"
+                            text="{i18n>productName}"
                         />
                     </Column>
                     <Column id="clmUnitP">
                         <Text
                             id="txtUnitP"
-                            text="Unit Price"
+                            text="{i18n>unitPrice}"
                         />
                     </Column>
                     <Column id="clmUnitS">
                         <Text
                             id="txtUnitS"
-                            text="Units in Stock"
+                            text="{i18n>unitStock}"
                         />
                     </Column>
                 </columns>
