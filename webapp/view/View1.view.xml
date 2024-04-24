@@ -21,18 +21,6 @@
                             placeholder="{i18n>productName}"
                             liveChange="onGetProduct"
                             showRefreshButton="true"
-                            width="93%"
-                        />
-                        <!-- <ToolbarSpacer id="spacer1" width="6%" /> -->
-                        <Button
-                            id="btnAdd"
-                            icon="sap-icon://add"
-                            width="2%"
-                        />
-                        <Button
-                            id="btnDel"
-                            icon="sap-icon://delete"
-                            width="2%"
                         />
                     </OverflowToolbar>
                 </headerToolbar>
