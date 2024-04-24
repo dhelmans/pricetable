@@ -16,12 +16,22 @@
             >
                 <headerToolbar>
                     <OverflowToolbar id="ovToolbar">
+                    <ToolbarSpacer id="tbs1"/>
                         <SearchField
-                            id="filter"
+                            id="filterName"
                             placeholder="{i18n>productName}"
-                            liveChange="onGetProduct"
+                            liveChange="onGetProductBy"
                             showRefreshButton="true"
+                            width="30%"
                         />
+                        <SearchField
+                            id="filterID"
+                            placeholder="{i18n>productID}"
+                            liveChange="onGetProductBy"
+                            showRefreshButton="true"
+                            width="30%"
+                        />
+                        <ToolbarSpacer id="tbs2"/>
                     </OverflowToolbar>
                 </headerToolbar>
                 <columns>
