@@ -17,13 +17,13 @@ sap.ui.define([
             onGetProductBy: function () {
 
                 const aFilter = [];
-                const sName = this.byId("filterName").getValue();
-                const iID = this.byId("filterID").getValue();
 
+                const sName = this.byId("filterName").getValue();
                 if (sName) {
                     aFilter.push(new Filter("ProductName", FilterOperator.Contains, sName));
                 }
 
+                const iID = this.byId("filterID").getValue();
                 if (iID) {
                     aFilter.push(new Filter("ProductID", FilterOperator.EQ, iID));
                 }
